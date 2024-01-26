@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { ButtonVisibilityComponent } from './button-visibility/button-visibility.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [ButtonVisibilityComponent],
   templateUrl: './header.component.html',
-  styles: ``
+  styles: ``,
 })
-export class HeaderComponent {
-
-}
+export class HeaderComponent {}
