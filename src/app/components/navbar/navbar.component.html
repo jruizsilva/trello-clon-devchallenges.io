@@ -1,22 +1,33 @@
-<nav class="bg-body-tertiary d-flex align-items-center py-2">
-  <div class="container mx-auto d-flex justify-content-between">
+<header class="bg-body-tertiary d-flex align-items-center py-2">
+  <div class="container mx-auto d-flex">
     <div
-      class="d-flex align-items-center pe-3 border-end justify-content-between col-8 col-sm-6 col-lg-4 content-between"
+      class="d-flex align-items-center pe-3 border-end justify-content-between col-5 col-lg-4 content-between"
     >
       <app-logo />
-      <h2 class="h5 mb-0 fw-light text-nowrap">Board name</h2>
+      <h2 class="h5 mb-0 fw-light text-nowrap d-none d-sm-block">Board name</h2>
     </div>
-    <div class="d-flex align-items-center d-none d-lg-block ps-3 col-auto">
-      <button class="btn btn-outline-secondary">All board</button>
-    </div>
-    <div class="d-flex align-items-center d-none d-lg-block col-auto">
-      <app-search />
-    </div>
-
-    <div class="d-flex align-items-center col-4 col-lg-2">
-      <div class="ms-auto">
-        <app-user-dropdown />
+    <nav
+      class="navbar navbar-expand-lg d-flex flex-grow-1 align-items-center justify-content-end ps-3"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav2"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav2">
+        <button class="btn btn-outline-secondary mb-2 mb-lg-0">
+          All board
+        </button>
+        <div class="ms-auto pe-5 pg-lg-0">
+          <app-user-dropdown />
+        </div>
       </div>
-    </div>
+    </nav>
   </div>
-</nav>
+</header>
